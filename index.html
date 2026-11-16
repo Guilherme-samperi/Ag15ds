@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Guilherme</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://jsdelivr.net" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Recurso Novo: Animação de hover nos cards */
+    .card-projeto {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-projeto:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu de Navegação Funcional -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Guilherme Dev</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seção de Perfil -->
+  <section id="perfil" class="py-5 bg-light text-center">
+    <div class="container">
+      <img src="https://placeholder.com" alt="Foto de Perfil" class="rounded-circle mb-3 shadow">
+      <h1 class="display-5 fw-bold">Olá, eu sou o Guilherme!</h1>
+      <p class="lead text-muted">Estudante de Desenvolvimento de Sistemas focado em criar soluções web modernas e responsivas.</p>
+    </div>
+  </section>
+
+  <!-- Recurso Novo: Seção de Habilidades -->
+  <section id="habilidades" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Minhas Habilidades</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <p class="mb-1 fw-bold">HTML5 & CSS3</p>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-success" style="width: 85%;">85%</div>
+          </div>
+          <p class="mb-1 fw-bold">Bootstrap</p>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-primary" style="width: 80%;">80%</div>
+          </div>
+          <p class="mb-1 fw-bold">JavaScript</p>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-warning text-dark" style="width: 65%;">65%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Projetos -->
+  <section id="projetos" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Meus Projetos</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card card-projeto h-100">
+            <div class="card-body">
+              <h5 class="card-title">Projeto 1</h5>
+              <p class="card-text">Descrição breve do sistema ou página desenvolvida durante o curso.</p>
+              <a href="#" class="btn btn-outline-primary">Ver no GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-projeto h-100">
+            <div class="card-body">
+              <h5 class="card-title">Projeto 2</h5>
+              <p class="card-text">Aplicação web responsiva utilizando componentes do Bootstrap.</p>
+              <a href="#" class="btn btn-outline-primary">Ver no GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-projeto h-100">
+            <div class="card-body">
+              <h5 class="card-title">Projeto 3</h5>
+              <p class="card-text">Página interativa desenvolvida com foco em experiência do usuário.</p>
+              <a href="#" class="btn btn-outline-primary">Ver no GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Contato -->
+  <section id="contato" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contato</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Nome</label>
+              <input type="text" class="form-control" placeholder="Seu nome" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">E-mail</label>
+              <input type="email" class="form-control" placeholder="seuemail@exemplo.com" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Mensagem</label>
+              <textarea class="form-control" rows="3" placeholder="Escreva sua mensagem..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark w-100">Enviar Mensagem</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://jsdelivr.net"></script>
+</body>
+</html>
